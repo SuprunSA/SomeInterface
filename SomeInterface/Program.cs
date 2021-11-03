@@ -12,15 +12,15 @@ namespace SomeInterface
 
     public interface ISomeInterface
     {
-        public int X { get; }
+        public int X { get; set; }
         public string Foo(string arg1);
         public void Bar(int number);
     }
 
     class A : ISomeInterface
     {
-        public int X { get; }
-        public int Y { get; }
+        public int X { get; set; }
+        public int Y { get; set; }
 
         public string Foo(string arg1)
         {
@@ -40,7 +40,7 @@ namespace SomeInterface
 
     class B : ISomeInterface
     {
-        public int X { get; }
+        public int X { get; set; }
 
         public string Foo(string arg1)
         {
